@@ -15,7 +15,7 @@ export default function Slider() {
     ]
     const changeSlide = ({ nativeEvent }) => {
         const slide=Math.ceil(nativeEvent.contentOffset.x/nativeEvent.layoutMeasurement.width)
-        console.log(slide)
+        //console.log(slide)
         setfirst(slide)
     }
     return (
@@ -35,7 +35,7 @@ export default function Slider() {
             {
                     images.map((img, key) => {
                         
-                        return key == first?<Text>⚪</Text>:<Text>⚫</Text>
+                        return key == first?<Text key={key}>⚪</Text>:<Text>⚫</Text>
                     })
                 }
             </Text>

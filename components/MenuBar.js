@@ -5,7 +5,7 @@ export default function MenuBar() {
   const navigation = useNavigation()
   return (
     <View>
-      <TouchableOpacity onPress={() => navigation.navigate("Contact")}>
+      <TouchableOpacity onPress={() => navigation.navigate("Contact",{name:"mayank",sname:"parmar"})}>
         <Text>ContactUs</Text>
       </TouchableOpacity>
       <TouchableOpacity onPress={()=>navigation.navigate("About")}>
