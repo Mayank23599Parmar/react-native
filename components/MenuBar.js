@@ -11,6 +11,12 @@ export default function MenuBar() {
       <TouchableOpacity onPress={()=>navigation.navigate("About")}>
         <Text>About</Text>
       </TouchableOpacity>
+      <TouchableOpacity onPress={()=>navigation.navigate("Gallery")}>
+        <Text>Gallery</Text>
+      </TouchableOpacity>
+      <TouchableOpacity onPress={()=>navigation.navigate("Career")}>
+        <Text>Career</Text>
+      </TouchableOpacity>
     </View>
   )
 }

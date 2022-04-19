@@ -2,6 +2,8 @@ import React from 'react';
 import Home from "./screens/Home";
 import About from "./screens/About";
 import ContactUs from "./screens/ContactUs";
+import Gallery from "./screens/Gallery";
+import Career from "./screens/Career";
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 export default function App() {
@@ -51,6 +53,44 @@ export default function App() {
         >
           {
             (props) => <About {...props} />
+          }
+        </Stack.Screen>
+          {/* Gallery */}
+          <Stack.Screen name='Gallery'
+          options={{
+            title: "Gallery",
+            headerTitleAlign: "center",
+            headerStyle: {
+              backgroundColor: "#06113C",
+            },
+            headerTintColor: "#fff",
+            headerTitleStyle: {
+              fontSize: 20,
+              fontWeight: "bold"
+            }
+          }}
+        >
+          {
+            (props) => <Gallery {...props} />
+          }
+        </Stack.Screen>
+         {/* Career */}
+         <Stack.Screen name='Career'
+          options={{
+            title: "Career",
+            headerTitleAlign: "center",
+            headerStyle: {
+              backgroundColor: "#06113C",
+            },
+            headerTintColor: "#fff",
+            headerTitleStyle: {
+              fontSize: 20,
+              fontWeight: "bold"
+            }
+          }}
+        >
+          {
+            (props) => <Career {...props} />
           }
         </Stack.Screen>
       </Stack.Navigator>
